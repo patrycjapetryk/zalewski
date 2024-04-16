@@ -21,6 +21,7 @@ const config: Config = {
       },
       colors: {
         red: '#830016',
+        'red-2': '#730012',
         'dark-red': '#5E0010',
         black: '#240004',
       },
@@ -36,6 +37,12 @@ const config: Config = {
       },
       borderRadius: {
         xl: '1rem',
+      },
+      gridTemplateColumns: {
+        '18': 'repeat(18, minmax(0, 1fr))',
+      },
+      content: {
+        arrow: 'url("/icons/link.svg")',
       },
     },
   },

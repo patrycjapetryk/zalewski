@@ -8,7 +8,7 @@ export const socialMedia = [
 
 export default function Footer() {
   return (
-    <footer className="text-xxs grid grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+    <footer className="text-xxs grid grid-cols-1 gap-x-10 gap-y-8 py-6 sm:grid-cols-2 lg:grid-cols-3">
       <section>
         <FooterHeader>Znajdziesz nas</FooterHeader>
         <p>
