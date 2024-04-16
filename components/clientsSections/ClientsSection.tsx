@@ -1,75 +1,101 @@
 import Image from 'next/image';
 
+import Header from '../ui/Header';
+import Paragraph from '../ui/Paragraph';
+import Section from '../ui/Section';
+
 export default function ClientsSection() {
   return (
-    <section className="grid grid-cols-3 gap-5">
-      <div
-        className={`
-          relative col-span-2 rounded-2xl bg-red py-28 pl-[50%] pr-10 
-          after:absolute after:right-2 after:top-2
-          after:text-6xl after:content-['*']
+    <Section>
+      <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
+        <article
+          className={`
+          after:content-arrow 
+          relative col-span-2 rounded-2xl bg-red py-14 pl-[50%] pr-6 after:absolute 
+          after:right-2 after:top-1 after:scale-75 xl:py-28 
+          xl:pr-10
         `}
-      >
-        <h2 className="mb-8 text-[1.75rem] leading-none">
-          Klienci <br />
-          Indywidualni
-        </h2>
-        <p className="text-sm">
-          Budujesz dom? Zespół naszych specjalistów pomoże spełnić Twoje
-          marzenia
-        </p>
-        <Image
-          className="absolute bottom-0 left-0 w-[51%]"
-          src="/images/photo-2.png"
-          alt=""
-          width={592}
-          height={592}
-        />
-      </div>
+        >
+          <Header>
+            Klienci <br />
+            Indywidualni
+          </Header>
+          <Paragraph>
+            Budujesz dom? Zespół naszych specjalistów pomoże spełnić Twoje
+            marzenia
+          </Paragraph>
+          <Image
+            className="absolute bottom-0 left-0 w-[51%]"
+            src="/images/photo-2.png"
+            alt=""
+            width={592}
+            height={592}
+          />
+        </article>
 
-      <div
-        className={`
-          relative rounded-2xl bg-red py-28 pl-14 pr-10
+        <article
+          className={`
+          after:content-arrow 
+          relative col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 
+          after:absolute after:right-2 after:top-1 after:scale-75 
+          sm:col-span-1 
+          xl:py-28 xl:pl-14 xl:pr-10
         `}
-      >
-        <h2 className="mb-8 text-[1.75rem] leading-none">
-          Architekci i biura projektowe
-        </h2>
-        <p className="text-sm">
-          Szukasz firmy, która kompleksowo zajmie się Twoim projektem? Zaufaj
-          naszemu doświadczeniu.
-        </p>
-      </div>
+        >
+          <Header>Architekci i biura projektowe</Header>
+          <Paragraph>
+            Szukasz firmy, która kompleksowo zajmie się Twoim projektem? Zaufaj
+            naszemu doświadczeniu.
+          </Paragraph>
+        </article>
 
-      <div className="relative rounded-2xl bg-red py-28 pl-14 pr-10">
-        <h2 className="mb-8 text-[1.75rem] leading-none">
-          Firmy <br />
-          branżowe
-        </h2>
-        <p className="text-sm">
-          Prowadzisz inwestycje o wysokich kosztach? Oferujemy swoją pomoc.
-          Sprawdź nasze referencje.
-        </p>
-      </div>
+        <article
+          className={`
+          after:content-arrow
+          relative col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 
+          after:absolute after:right-2 after:top-1 after:scale-75 
+          sm:col-span-1 
+          xl:py-28 xl:pl-14 xl:pr-10
+        `}
+        >
+          <Header>
+            Firmy <br />
+            branżowe
+          </Header>
+          <Paragraph>
+            Prowadzisz inwestycje o wysokich kosztach? Oferujemy swoją pomoc.
+            Sprawdź nasze referencje.
+          </Paragraph>
+        </article>
 
-      <div className="relative col-span-2 rounded-2xl bg-red py-28 pl-14 pr-[50%]">
-        <h2 className="mb-8 text-[1.75rem] leading-none">
-          Klienci <br />
-          Inwestycyjni
-        </h2>
-        <p className="text-sm">
-          Oferta obejmuje wszystkie etapy procesu inwestycyjnego od analiz po
-          doradztwo.
-        </p>
+        <article
+          className={`
+          after:content-arrow 
+          relative col-span-2 rounded-2xl bg-red py-14 pl-8 pr-[50%] after:absolute 
+          after:right-2 after:top-1 after:scale-75 
+          xl:py-28 xl:pl-14
+        `}
+        >
+          <Header>
+            Klienci <br />
+            Inwestycyjni
+          </Header>
+          <Paragraph>
+            Oferta obejmuje wszystkie etapy procesu inwestycyjnego od analiz po
+            doradztwo.
+          </Paragraph>
 
-        <Image
-          className="absolute bottom-0 right-2 w-[45%]"
-          src="/images/photo-3.png"
-          alt=""
-          width={592}
-          height={592}
-        />
+          <div className="absolute bottom-0 right-2 h-[94%] w-[50%]">
+            <Image
+              className="h-full w-full object-contain"
+              src="/images/photo-3.png"
+              alt=""
+              width={592}
+              height={592}
+            />
+          </div>
+        </article>
       </div>
-    </section>
+    </Section>
   );
 }

@@ -10,9 +10,9 @@ export default function Slider() {
           <span>dla Ciebie</span>
         </h1>
       </div>
-      <div>
+      <div className="flex justify-center">
         <Image
-          className="w-full"
+          className="h-auto w-full max-w-[580px]"
           src="/images/slider-image.png"
           alt=""
           width={592}

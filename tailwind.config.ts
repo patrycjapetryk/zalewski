@@ -41,8 +41,11 @@ const config: Config = {
       gridTemplateColumns: {
         '18': 'repeat(18, minmax(0, 1fr))',
       },
+      gridColumn: {
+        'span-18': 'span 18 / span 18',
+      },
       content: {
-        arrow: 'url("/icons/link.svg")',
+        arrow: 'url("/images/arrow.svg")',
       },
     },
   },

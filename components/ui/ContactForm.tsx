@@ -7,7 +7,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className="grid grid-cols-1 gap-10 lg:grid-cols-2"
+      className="grid grid-cols-1 gap-6 sm:gap-10 lg:grid-cols-2"
       onSubmit={(event) => handleSubmit(event)}
     >
       <div>
@@ -37,7 +37,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="col-span-2">
+      <div className="lg:col-span-2">
         <label htmlFor="budget" className="hidden">
           ESTIMATED BUDGET
         </label>
