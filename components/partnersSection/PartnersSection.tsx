@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import SectionHeader from '../ui/SectionHeader';
-import Section from '../ui/Section';
+import SectionHeader from '../../ui/SectionHeader';
+import Section from '../../ui/Section';
 
 export default function PartnersSection() {
   return (

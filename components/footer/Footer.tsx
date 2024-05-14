@@ -1,4 +1,4 @@
-import FooterHeader from '../ui/FooterHeader';
+import FooterHeader from '../../ui/FooterHeader';
 
 export const socialMedia = [
   { name: 'Instagram', url: '#' },
@@ -8,7 +8,7 @@ export const socialMedia = [
 
 export default function Footer() {
   return (
-    <footer className="text-xxs grid grid-cols-1 gap-x-10 gap-y-8 py-6 sm:grid-cols-2 lg:grid-cols-3">
+    <footer className="grid grid-cols-1 gap-x-10 gap-y-8 py-6 text-xxs sm:grid-cols-2 lg:grid-cols-3">
       <section>
         <FooterHeader>Znajdziesz nas</FooterHeader>
         <p>

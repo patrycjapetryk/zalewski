@@ -1,64 +1,47 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
-import SectionHeader from '../ui/SectionHeader';
-import Section from '../ui/Section';
+import SectionHeader from '../../ui/SectionHeader';
+import Section from '../../ui/Section';
+import GalleryItem from '@/ui/GalleryItem';
+
+export const galleryItems = [
+  {
+    id: '1',
+    image: '/images/photo-1.jpg',
+    link: '#',
+    alt: 'Filtry warszawskie',
+    caption: 'Filtry warszawskie',
+  },
+  {
+    id: '2',
+    image: '/images/photo-2.jpg',
+    link: '#',
+    alt: 'Cedet Warszawa',
+    caption: 'Cedet Warszawa',
+  },
+  {
+    id: '3',
+    image: '/images/photo-3.jpg',
+    link: '#',
+    alt: 'Franke Polska Sękocin',
+    caption: 'Franke Polska Sękocin',
+  },
+];
 
 export default function ProjectsSection() {
   return (
     <Section>
       <SectionHeader>Realizacje</SectionHeader>
       <div className="w-full overflow-x-auto ">
-        <div className="grid w-[200%] grid-cols-3 gap-5 md:w-full">
-          <a href="#">
-            <figure className="bg-red">
-              <Image
-                className="w-full"
-                src="/images/photo-1.jpg"
-                alt=""
-                width={507}
-                height={420}
-                priority
-              />
-
-              <figcaption className="px-4 py-6">
-                <h3 className="text-sm leading-none">Filtry warszawskie</h3>
-              </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure className="bg-red">
-              <Image
-                className="w-full"
-                src="/images/photo-2.jpg"
-                alt=""
-                width={507}
-                height={420}
-                priority
-              />
-
-              <figcaption className="px-4 py-6">
-                <h3 className="text-sm leading-none">Cedet Warszawa</h3>
-              </figcaption>
-            </figure>
-          </a>
-
-          <a href="#">
-            <figure className="bg-red">
-              <Image
-                className="w-full"
-                src="/images/photo-3.jpg"
-                alt=""
-                width={507}
-                height={420}
-                priority
-              />
-
-              <figcaption className="px-4 py-6">
-                <h3 className="text-sm leading-none">Franke Polska Sękocin</h3>
-              </figcaption>
-            </figure>
-          </a>
+        <div className="grid w-[200%] grid-cols-3 gap-6 md:w-full">
+          {galleryItems.map(({ id, image, link, alt, caption }) => {
+            return (
+              <Link href={link} key={id} className="w-full">
+                <GalleryItem image={image} alt={alt} caption={caption} />
+              </Link>
+            );
+          })}
         </div>
       </div>
     </Section>

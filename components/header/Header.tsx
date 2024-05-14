@@ -1,6 +1,8 @@
-import ButtonLink from '../ui/ButtonLink';
-import Logo from '../ui/Logo';
-import Navigation from '../ui/Navigation';
+'use client';
+
+import ButtonLink from '../../ui/ButtonLink';
+import Logo from '../../ui/Logo';
+import Navigation from '../../ui/Navigation';
 
 export default function Header() {
   return (

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import Header from '../ui/Header';
-import Paragraph from '../ui/Paragraph';
-import Section from '../ui/Section';
+import Header from '../../ui/Header';
+import Paragraph from '../../ui/Paragraph';
+import Section from '../../ui/Section';
 
 export default function ClientsSection() {
   return (
@@ -10,9 +10,9 @@ export default function ClientsSection() {
       <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
         <article
           className={`
-          after:content-arrow 
-          relative col-span-2 rounded-2xl bg-red py-14 pl-[50%] pr-6 after:absolute 
-          after:right-2 after:top-1 after:scale-75 xl:py-28 
+          relative 
+          col-span-2 rounded-2xl bg-red py-14 pl-[50%] pr-6 after:absolute after:right-2 
+          after:top-1 after:scale-75 after:content-arrow xl:py-28 
           xl:pr-10
         `}
         >
@@ -35,9 +35,9 @@ export default function ClientsSection() {
 
         <article
           className={`
-          after:content-arrow 
-          relative col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 
-          after:absolute after:right-2 after:top-1 after:scale-75 
+          relative 
+          col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 after:absolute 
+          after:right-2 after:top-1 after:scale-75 after:content-arrow 
           sm:col-span-1 
           xl:py-28 xl:pl-14 xl:pr-10
         `}
@@ -51,9 +51,9 @@ export default function ClientsSection() {
 
         <article
           className={`
-          after:content-arrow
-          relative col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 
-          after:absolute after:right-2 after:top-1 after:scale-75 
+          relative
+          col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 after:absolute 
+          after:right-2 after:top-1 after:scale-75 after:content-arrow 
           sm:col-span-1 
           xl:py-28 xl:pl-14 xl:pr-10
         `}
@@ -70,9 +70,9 @@ export default function ClientsSection() {
 
         <article
           className={`
-          after:content-arrow 
-          relative col-span-2 rounded-2xl bg-red py-14 pl-8 pr-[50%] after:absolute 
-          after:right-2 after:top-1 after:scale-75 
+          relative 
+          col-span-2 rounded-2xl bg-red py-14 pl-8 pr-[50%] after:absolute after:right-2 
+          after:top-1 after:scale-75 after:content-arrow 
           xl:py-28 xl:pl-14
         `}
         >

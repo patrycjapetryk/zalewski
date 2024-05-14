@@ -1,15 +1,15 @@
-import SectionHeader from '../ui/SectionHeader';
+import SectionHeader from '../../ui/SectionHeader';
 
-import Header from '../ui/Header';
-import Paragraph from '../ui/Paragraph';
-import Section from '../ui/Section';
+import Header from '../../ui/Header';
+import Paragraph from '../../ui/Paragraph';
+import Section from '../../ui/Section';
 
 export default function ClientsSection() {
   return (
     <Section>
       <SectionHeader>Klienci zaufali nam</SectionHeader>
 
-      <div className="sm:grid-cols-18 grid w-full grid-cols-1 grid-rows-12 gap-5">
+      <div className="grid w-full grid-cols-1 grid-rows-12 gap-5 sm:grid-cols-18">
         <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-6 lg:col-span-6 xl:px-9 xl:py-20">
           <Header>Doświadczenie</Header>
           <Paragraph>

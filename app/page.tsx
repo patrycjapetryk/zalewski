@@ -1,19 +1,20 @@
-import ClientsSection from '@/components/clientsSections/ClientsSection';
-import ContactFormSection from '@/components/contactFormSection/ContactFormSection';
-import PartnersSection from '@/components/partnersSection/PartnersSection';
-import ProjectsSection from '@/components/projectsSection/ProjectsSection';
-import Slider from '@/components/slider/Slider';
-import ValuesSection from '@/components/valuesSection/ValuesSection';
+import Main from '@/ui/Main';
+import ClientsSection from '@/components/ClientsSections/ClientsSection';
+import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
+import PartnersSection from '@/components/PartnersSection/PartnersSection';
+import ProjectsSection from '@/components/ProjectsSection/ProjectsSection';
+import Slider from '@/components/Slider/Slider';
+import ValuesSection from '@/components/ValuesSection/ValuesSection';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-20 py-14 lg:pb-28 lg:pt-12">
+    <Main>
       <Slider />
       <ClientsSection />
       <ValuesSection />
       <ProjectsSection />
       <PartnersSection />
       <ContactFormSection />
-    </main>
+    </Main>
   );
 }
