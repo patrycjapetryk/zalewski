@@ -1,20 +1,23 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
-import Header from '../../ui/Header';
-import Paragraph from '../../ui/Paragraph';
-import Section from '../../ui/Section';
+import Header from '@/ui/Header';
+import Paragraph from '@/ui/Paragraph';
+import Section from '@/ui/Section';
 
 export default function ClientsSection() {
   return (
     <Section>
       <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
-        <article
+        <Link
           className={`
-          relative 
-          col-span-2 rounded-2xl bg-red py-14 pl-[50%] pr-6 after:absolute after:right-2 
-          after:top-1 after:scale-75 after:content-arrow xl:py-28 
-          xl:pr-10
+          relative
+          col-span-2 rounded-2xl bg-red py-14 pl-[50%] pr-6
+          after:absolute after:right-2 after:top-1 after:scale-75 after:content-arrow
+          hover:after:right-1 hover:after:top-0
+          xl:py-28 xl:pr-10
         `}
+          href="/oferta/klienci-indywidualni"
         >
           <Header>
             Klienci <br />
@@ -31,7 +34,7 @@ export default function ClientsSection() {
             width={592}
             height={592}
           />
-        </article>
+        </Link>
 
         <article
           className={`

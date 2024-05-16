@@ -8,7 +8,7 @@ export const menuItems = [
   },
   {
     label: 'Oferta',
-    url: '#',
+    url: '/oferta',
   },
   {
     label: 'Realizacje',
@@ -30,7 +30,7 @@ export default function Navigation() {
           <li key={i} className="text-sm uppercase">
             <Link
               className={
-                currentPath === url ? 'underline underline-offset-4' : ''
+                currentPath.includes(url) ? 'underline underline-offset-4' : ''
               }
               href={url}
             >
