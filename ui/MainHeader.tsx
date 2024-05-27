@@ -1,18 +1,28 @@
-import { ReactNode } from 'react';
+import { type ComponentProps, type ReactNode } from 'react';
+import { cn } from '@/utils/cn';
 
 type Props = {
   children: ReactNode;
   uppercase?: boolean;
-};
+} & ComponentProps<'h1'>;
 
-export default function MainHeader({ children, uppercase }: Props) {
+export default function MainHeader({
+  className,
+  children,
+  uppercase,
+  ...spread
+}: Props) {
   return (
     <h1
-      className={`
-        text-xl leading-none tracking-tight
+      className={cn(
+        `
+        mb-10 text-xl leading-none tracking-tight
         xs:text-2xl md:text-3xl 
-        ${uppercase ? 'uppercase' : 'mb-10 mt-4 xl:text-4xl'}
-      `}
+        ${uppercase ? 'uppercase' : 'mt-4 xl:text-4xl'}
+        `,
+        className,
+      )}
+      {...spread}
     >
       {children}
     </h1>

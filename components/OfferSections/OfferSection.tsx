@@ -1,23 +1,17 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 import Header from '@/ui/Header';
 import Paragraph from '@/ui/Paragraph';
 import Section from '@/ui/Section';
+import ClientsLink from './ClientsLink';
 
 export default function ClientsSection() {
   return (
     <Section>
-      <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
-        <Link
-          className={`
-          relative
-          col-span-2 rounded-2xl bg-red py-14 pl-[50%] pr-6
-          after:absolute after:right-2 after:top-1 after:scale-75 after:content-arrow
-          hover:after:right-1 hover:after:top-0
-          xl:py-28 xl:pr-10
-        `}
+      <div className="grid w-full grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3">
+        <ClientsLink
           href="/oferta/klienci-indywidualni"
+          className="pl-[40%] xs:col-span-2 xl:pl-[50%]"
         >
           <Header>
             Klienci <br />
@@ -27,40 +21,26 @@ export default function ClientsSection() {
             Budujesz dom? Zespół naszych specjalistów pomoże spełnić Twoje
             marzenia
           </Paragraph>
-          <Image
-            className="absolute bottom-0 left-0 w-[51%]"
-            src="/images/photo-2.png"
-            alt=""
-            width={592}
-            height={592}
-          />
-        </Link>
+          <div className="absolute -left-10 bottom-0 h-[123%] w-[62%] xs:-left-14 xl:left-0 xl:w-[51%]">
+            <Image
+              className="h-full w-full object-contain object-left-bottom"
+              src="/images/photo-2.png"
+              alt="Klienci indywidualni"
+              sizes="(max-width: 768px) 50vw, 33vw"
+              fill
+            />
+          </div>
+        </ClientsLink>
 
-        <article
-          className={`
-          relative 
-          col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 after:absolute 
-          after:right-2 after:top-1 after:scale-75 after:content-arrow 
-          sm:col-span-1 
-          xl:py-28 xl:pl-14 xl:pr-10
-        `}
-        >
-          <Header>Architekci i biura projektowe</Header>
+        <ClientsLink href="/oferta/architekci-i-biura-projektowe">
+          <Header>Architekci i&nbsp;biura projektowe</Header>
           <Paragraph>
             Szukasz firmy, która kompleksowo zajmie się Twoim projektem? Zaufaj
             naszemu doświadczeniu.
           </Paragraph>
-        </article>
+        </ClientsLink>
 
-        <article
-          className={`
-          relative
-          col-span-2 rounded-2xl bg-red py-14 pl-8 pr-6 after:absolute 
-          after:right-2 after:top-1 after:scale-75 after:content-arrow 
-          sm:col-span-1 
-          xl:py-28 xl:pl-14 xl:pr-10
-        `}
-        >
+        <ClientsLink href="/oferta/firmy-branzowe">
           <Header>
             Firmy <br />
             branżowe
@@ -69,15 +49,11 @@ export default function ClientsSection() {
             Prowadzisz inwestycje o wysokich kosztach? Oferujemy swoją pomoc.
             Sprawdź nasze referencje.
           </Paragraph>
-        </article>
+        </ClientsLink>
 
-        <article
-          className={`
-          relative 
-          col-span-2 rounded-2xl bg-red py-14 pl-8 pr-[50%] after:absolute after:right-2 
-          after:top-1 after:scale-75 after:content-arrow 
-          xl:py-28 xl:pl-14
-        `}
+        <ClientsLink
+          href="/oferta/klienci-inwestycyjni"
+          className="pr-[46%] xs:col-span-2 xl:pr-[55%]"
         >
           <Header>
             Klienci <br />
@@ -88,16 +64,16 @@ export default function ClientsSection() {
             doradztwo.
           </Paragraph>
 
-          <div className="absolute bottom-0 right-2 h-[94%] w-[50%]">
+          <div className="absolute -bottom-7 -right-2 h-full w-[48%] xl:right-7">
             <Image
               className="h-full w-full object-contain"
               src="/images/photo-3.png"
-              alt=""
-              width={592}
-              height={592}
+              alt="Klienci inwestycyjni"
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
             />
           </div>
-        </article>
+        </ClientsLink>
       </div>
     </Section>
   );
