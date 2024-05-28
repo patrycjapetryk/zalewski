@@ -48,6 +48,10 @@ const config: Config = {
       content: {
         arrow: 'url("/images/arrow.svg")',
       },
+      aspectRatio: {
+        long: '1112 / 437',
+        reg: '541 / 437',
+      },
     },
   },
   plugins: [],

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Header from '@/ui/Header';
 import Paragraph from '@/ui/Paragraph';
 import Section from '@/ui/Section';
-import ClientsLink from './ClientsLink';
+import ClientsLink from '@/components/ClientsSection/ClientsLink';
 
 export default function ClientsSection() {
   return (

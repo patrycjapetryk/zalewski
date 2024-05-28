@@ -12,7 +12,7 @@ export const menuItems = [
   },
   {
     label: 'Realizacje',
-    url: '#',
+    url: '/realizacje',
   },
   {
     label: 'Dołącz do nas',

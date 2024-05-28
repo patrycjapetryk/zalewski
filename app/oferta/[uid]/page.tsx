@@ -3,9 +3,9 @@ import { notFound } from 'next/navigation';
 import {
   type ClientsDataItem,
   clientsData,
-} from '@/components/OfferSections/clientsData';
+} from '@/components/ClientsSection/clientsData';
 import Main from '@/ui/Main';
-import ClientsSection from '@/components/OfferSections/ClientsSection';
+import ClientsSection from '@/components/ClientsSection/ClientsSection';
 import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 
