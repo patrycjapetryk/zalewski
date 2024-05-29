@@ -16,7 +16,7 @@ export const menuItems = [
   },
   {
     label: 'Dołącz do nas',
-    url: '#',
+    url: '/dolacz-do-nas',
   },
 ];
 

@@ -1,8 +1,8 @@
-import { type ComponentProps } from 'react';
+import { type ReactNode, type ComponentProps } from 'react';
 import { cn } from '@/utils/cn';
 
 type Props = {
-  children: string | string[];
+  children: ReactNode;
 } & ComponentProps<'p'>;
 
 export default function Paragraph({ children, className, ...spread }: Props) {
