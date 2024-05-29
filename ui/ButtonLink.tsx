@@ -1,10 +1,15 @@
-import { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
-export default function ButtonLink({ children }: { children: ReactNode }) {
+type Props = {
+  link: string;
+  children: ReactNode;
+};
+
+export default function ButtonLink({ link, children }: Props) {
   return (
     <a
       className="leading-2 hidden rounded-xl bg-white px-12 py-[0.6rem] text-sm uppercase text-black transition-opacity hover:opacity-75 lg:block"
-      href="#"
+      href={link}
     >
       {children}
     </a>

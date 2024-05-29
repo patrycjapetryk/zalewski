@@ -1,8 +1,8 @@
 'use client';
 
-import ButtonLink from '../../ui/ButtonLink';
-import Logo from '../../ui/Logo';
-import Navigation from '../../ui/Navigation';
+import ButtonLink from '@/ui/ButtonLink';
+import Logo from '@/ui/Logo';
+import Navigation from '@/ui/Navigation';
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
       >
         <Logo />
         <Navigation />
-        <ButtonLink>Kontakt</ButtonLink>
+        <ButtonLink link="#kontakt">Kontakt</ButtonLink>
       </div>
     </header>
   );

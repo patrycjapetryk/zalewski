@@ -24,7 +24,7 @@ export default function Navigation() {
   const currentPath = usePathname();
 
   return (
-    <nav className="hidden rounded-xl bg-white/10 px-12 py-3 backdrop-brightness-110 lg:block">
+    <nav className="hidden rounded-xl bg-white/10 px-12 py-3 backdrop-brightness-110 transition-all duration-300 hover:bg-white/15 lg:block">
       <ul className="flex gap-8">
         {menuItems.map(({ url, label }, i) => (
           <li key={i} className="text-sm uppercase">
