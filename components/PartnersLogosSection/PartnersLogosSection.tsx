@@ -1,15 +1,15 @@
 import Image from 'next/image';
 
-import SectionHeader from '../../ui/SectionHeader';
-import Section from '../../ui/Section';
+import SectionHeader from '@/ui/SectionHeader';
+import Section from '@/ui/Section';
 
-export default function PartnersSection() {
+export default function PartnersLogosSection() {
   return (
     <Section>
       <SectionHeader>Partnerzy</SectionHeader>
       <div className="hide-scroll w-full overflow-x-scroll">
         <div className="my-6 flex w-[200%] justify-between gap-6 lg:w-full">
-          <div>
+          <a href="#" target="_blank">
             <Image
               className="h-[90px] w-auto"
               src="/images/logo-1.svg"
@@ -18,8 +18,9 @@ export default function PartnersSection() {
               height={181}
               priority
             />
-          </div>
-          <div>
+          </a>
+
+          <a href="#" target="_blank">
             <Image
               className="h-[90px] w-auto"
               src="/images/logo-2.svg"
@@ -28,8 +29,9 @@ export default function PartnersSection() {
               height={181}
               priority
             />
-          </div>
-          <div>
+          </a>
+
+          <a href="#" target="_blank">
             <Image
               className="h-[90px] w-auto"
               src="/images/logo-3.svg"
@@ -38,8 +40,9 @@ export default function PartnersSection() {
               height={181}
               priority
             />
-          </div>
-          <div>
+          </a>
+
+          <a href="#" target="_blank">
             <Image
               className="h-[90px] w-auto"
               src="/images/logo-4.svg"
@@ -48,8 +51,9 @@ export default function PartnersSection() {
               height={181}
               priority
             />
-          </div>
-          <div>
+          </a>
+
+          <a href="#" target="_blank">
             <Image
               className="h-[90px] w-auto"
               src="/images/logo-5.svg"
@@ -58,8 +62,9 @@ export default function PartnersSection() {
               height={181}
               priority
             />
-          </div>
-          <div>
+          </a>
+
+          <a href="#" target="_blank">
             <Image
               className="h-[90px] w-auto"
               src="/images/logo-6.svg"
@@ -68,7 +73,7 @@ export default function PartnersSection() {
               height={181}
               priority
             />
-          </div>
+          </a>
         </div>
       </div>
     </Section>

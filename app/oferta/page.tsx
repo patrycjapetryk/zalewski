@@ -1,13 +1,13 @@
 import Main from '@/ui/Main';
 import OfferSection from '@/components/OfferSections/OfferSection';
 import ContactSection from '@/components/ContactSection/ContactSection';
-import PartnersSection from '@/components/PartnersSection/PartnersSection';
+import PartnersLogosSection from '@/components/PartnersLogosSection/PartnersLogosSection';
 
 export default function Offer() {
   return (
     <Main className="xl:mt-10">
       <OfferSection />
-      <PartnersSection />
+      <PartnersLogosSection />
       <ContactSection />
     </Main>
   );

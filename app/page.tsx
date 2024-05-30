@@ -1,7 +1,7 @@
 import Main from '@/ui/Main';
 import OfferSection from '@/components/OfferSections/OfferSection';
 import ContactSection from '@/components/ContactSection/ContactSection';
-import PartnersSection from '@/components/PartnersSection/PartnersSection';
+import PartnersLogosSection from '@/components/PartnersLogosSection/PartnersLogosSection';
 import ProjectsSection from '@/components/ProjectsSection/ProjectsSection';
 import Slider from '@/components/Slider/Slider';
 import ValuesSection from '@/components/ValuesSection/ValuesSection';
@@ -13,7 +13,7 @@ export default function Home() {
       <OfferSection />
       <ValuesSection />
       <ProjectsSection />
-      <PartnersSection />
+      <PartnersLogosSection />
       <ContactSection />
     </Main>
   );

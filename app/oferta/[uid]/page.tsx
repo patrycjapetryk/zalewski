@@ -7,7 +7,7 @@ import {
 import Main from '@/ui/Main';
 import ClientsSection from '@/components/ClientsSection/ClientsSection';
 import ContactSection from '@/components/ContactSection/ContactSection';
-import PartnersSection from '@/components/PartnersSection/PartnersSection';
+import PartnersLogosSection from '@/components/PartnersLogosSection/PartnersLogosSection';
 
 function getPageDataByUID(uid: string): ClientsDataItem | null {
   const clientsPageDataIndex = clientsData.findIndex(
@@ -26,7 +26,7 @@ export default function ClientsPage({ params }: { params: { uid: string } }) {
   return (
     <Main className="mt-4">
       <ClientsSection clientsPageData={clientsPageData} />
-      <PartnersSection />
+      <PartnersLogosSection />
       <ContactSection />
     </Main>
   );

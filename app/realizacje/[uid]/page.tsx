@@ -7,7 +7,7 @@ import {
 import Main from '@/ui/Main';
 
 import ContactSection from '@/components/ContactSection/ContactSection';
-import PartnersSection from '@/components/PartnersSection/PartnersSection';
+import PartnersLogosSection from '@/components/PartnersLogosSection/PartnersLogosSection';
 import ProjectSection from '@/components/ProjectSection/ProjectSection';
 
 function getPageDataByUID(uid: string): AllProjectsDataItem | null {
@@ -27,7 +27,7 @@ export default function ProjectPage({ params }: { params: { uid: string } }) {
   return (
     <Main className="mt-4">
       <ProjectSection projectData={projectData} />
-      <PartnersSection />
+      <PartnersLogosSection />
       <ContactSection />
     </Main>
   );
