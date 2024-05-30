@@ -1,5 +1,5 @@
 import Main from '@/ui/Main';
-import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
+import ContactSection from '@/components/ContactSection/ContactSection';
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 import AllProjectsSection from '@/components/AllProjectsSection/AllProjectsSection';
 
@@ -8,7 +8,7 @@ export default function Offer() {
     <Main className="xl:mt-10">
       <AllProjectsSection />
       <PartnersSection />
-      <ContactFormSection />
+      <ContactSection />
     </Main>
   );
 }

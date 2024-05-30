@@ -1,6 +1,6 @@
 import Main from '@/ui/Main';
 import OfferSection from '@/components/OfferSections/OfferSection';
-import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
+import ContactSection from '@/components/ContactSection/ContactSection';
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 import ProjectsSection from '@/components/ProjectsSection/ProjectsSection';
 import Slider from '@/components/Slider/Slider';
@@ -14,7 +14,7 @@ export default function Home() {
       <ValuesSection />
       <ProjectsSection />
       <PartnersSection />
-      <ContactFormSection />
+      <ContactSection />
     </Main>
   );
 }

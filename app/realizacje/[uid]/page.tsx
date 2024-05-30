@@ -6,7 +6,7 @@ import {
 } from '@/components/AllProjectsSection/allProjectsData';
 import Main from '@/ui/Main';
 
-import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
+import ContactSection from '@/components/ContactSection/ContactSection';
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 import ProjectSection from '@/components/ProjectSection/ProjectSection';
 
@@ -28,7 +28,7 @@ export default function ProjectPage({ params }: { params: { uid: string } }) {
     <Main className="mt-4">
       <ProjectSection projectData={projectData} />
       <PartnersSection />
-      <ContactFormSection />
+      <ContactSection />
     </Main>
   );
 }

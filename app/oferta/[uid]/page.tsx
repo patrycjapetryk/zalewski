@@ -6,7 +6,7 @@ import {
 } from '@/components/ClientsSection/clientsData';
 import Main from '@/ui/Main';
 import ClientsSection from '@/components/ClientsSection/ClientsSection';
-import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
+import ContactSection from '@/components/ContactSection/ContactSection';
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 
 function getPageDataByUID(uid: string): ClientsDataItem | null {
@@ -27,7 +27,7 @@ export default function ClientsPage({ params }: { params: { uid: string } }) {
     <Main className="mt-4">
       <ClientsSection clientsPageData={clientsPageData} />
       <PartnersSection />
-      <ContactFormSection />
+      <ContactSection />
     </Main>
   );
 }
