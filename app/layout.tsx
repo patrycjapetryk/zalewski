@@ -4,8 +4,8 @@ import { type Metadata } from 'next';
 import './globals.css';
 import { manrope } from './fonts';
 
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import MainHeader from '@/components/MainHeader/MainHeader';
+import MainFooter from '@/components/MainFooter/MainFooter';
 import LayoutWrapper from '@/ui/LayoutWrapper';
 import { MenuContextProvider } from '@/components/Menu/MenuContext';
 import Body from '@/ui/Body';
@@ -21,9 +21,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <MenuContextProvider>
         <Body>
           <LayoutWrapper>
-            <Header />
+            <MainHeader />
             {children}
-            <Footer />
+            <MainFooter />
           </LayoutWrapper>
         </Body>
       </MenuContextProvider>

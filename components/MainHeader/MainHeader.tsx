@@ -5,7 +5,7 @@ import DesktopMenu from '@/components/Menu/DesktopMenu';
 import MobileMenu from '@/components/Menu/MobileMenu';
 import { useViewPort } from '@/hooks/useViewPort';
 
-export default function Header() {
+export default function MainHeader() {
   const { x } = useViewPort();
 
   return (
