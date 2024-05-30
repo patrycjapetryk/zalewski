@@ -8,7 +8,9 @@ export default function JoinUsSection() {
     <Section>
       <MainHeader className="hidden">Dołącz do nas</MainHeader>
       <article>
-        <SectionHeader>Dla studentów/stażystów</SectionHeader>
+        <SectionHeader className="mb-10 xl:mb-14">
+          Dla studentów/stażystów
+        </SectionHeader>
         <Paragraph className="mb-10">
           Jeśli jesteś absolwentem studiów wyższych lub studentem ostatnich lat
           i dopiero rozpoczynasz swoją karierę zawodową możesz dołączyć do
@@ -19,7 +21,9 @@ export default function JoinUsSection() {
         </Paragraph>
       </article>
       <article className="mt-12 xl:mt-14">
-        <SectionHeader>Dla architektów</SectionHeader>
+        <SectionHeader className="mb-10 xl:mb-14">
+          Dla architektów
+        </SectionHeader>
         <Paragraph className="mb-10 flex flex-col gap-6">
           <span>
             Marzysz o pracy, która pozwoli połączyć Twoją pasję z rozwojem
@@ -46,7 +50,9 @@ export default function JoinUsSection() {
         </Paragraph>
       </article>
       <article className="mt-12 xl:mt-14">
-        <SectionHeader>Aktualne oferty</SectionHeader>
+        <SectionHeader className="mb-10 xl:mb-14">
+          Aktualne oferty
+        </SectionHeader>
         <ul className="flex max-w-[60%] justify-between gap-2">
           <li>ARCHITEKT</li>
           <li>ARCHITEKT</li>
