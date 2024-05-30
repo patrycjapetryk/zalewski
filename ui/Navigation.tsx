@@ -1,30 +1,17 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export const menuItems = [
-  {
-    label: 'O nas',
-    url: '/o-nas',
-  },
-  {
-    label: 'Oferta',
-    url: '/oferta',
-  },
-  {
-    label: 'Realizacje',
-    url: '/realizacje',
-  },
-  {
-    label: 'Dołącz do nas',
-    url: '/dolacz-do-nas',
-  },
-];
+import { type MenuItems } from '@/components/Menu/menuData';
 
-export default function Navigation() {
+type Props = {
+  menuItems: MenuItems;
+};
+
+export default function Navigation({ menuItems }: Props) {
   const currentPath = usePathname();
 
   return (
-    <nav className="hidden rounded-xl bg-white/10 px-12 py-3 backdrop-brightness-110 transition-all duration-300 hover:bg-white/15 lg:block">
+    <nav className="rounded-xl bg-white/10 px-12 py-3 backdrop-brightness-110 transition-all duration-300 hover:bg-white/15">
       <ul className="flex gap-8">
         {menuItems.map(({ url, label }, i) => (
           <li key={i} className="text-sm uppercase">

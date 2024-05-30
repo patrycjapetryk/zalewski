@@ -52,6 +52,15 @@ const config: Config = {
         long: '1112 / 437',
         reg: '541 / 437',
       },
+      animation: {
+        'fade-in': 'opacity 0.5s ease-in-out',
+      },
+      keyframes: {
+        opacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
     },
   },
   plugins: [],
