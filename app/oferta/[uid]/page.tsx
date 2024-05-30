@@ -9,7 +9,7 @@ import ClientsSection from '@/components/ClientsSection/ClientsSection';
 import ContactFormSection from '@/components/ContactFormSection/ContactFormSection';
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 
-export function getPageDataByUID(uid: string): ClientsDataItem | null {
+function getPageDataByUID(uid: string): ClientsDataItem | null {
   const clientsPageDataIndex = clientsData.findIndex(
     (item) => item.uid === uid,
   );

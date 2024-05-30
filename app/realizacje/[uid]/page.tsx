@@ -10,7 +10,7 @@ import ContactFormSection from '@/components/ContactFormSection/ContactFormSecti
 import PartnersSection from '@/components/PartnersSection/PartnersSection';
 import ProjectSection from '@/components/ProjectSection/ProjectSection';
 
-export function getPageDataByUID(uid: string): AllProjectsDataItem | null {
+function getPageDataByUID(uid: string): AllProjectsDataItem | null {
   const allProjectsDataIndex = allProjectsData.findIndex(
     (item) => item.uid === uid,
   );
