@@ -1,5 +1,5 @@
 import Main from '@/ui/Main';
-import OfferSection from '@/components/OfferSections/OfferSection';
+import OfferSection from '@/components/OfferSection/OfferSection';
 import ContactSection from '@/components/ContactSection/ContactSection';
 import PartnersLogosSection from '@/components/PartnersLogosSection/PartnersLogosSection';
 import ProjectsCarousel from '@/components/ProjectsCarousel/ProjectsCarousel';
