@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-export default function Slider() {
+export default function HomepageHeader() {
   return (
-    <section className="grid w-full grid-cols-1 gap-6 px-1 xs:gap-10 lg:grid-cols-3 lg:gap-5">
+    <header className="grid w-full grid-cols-1 gap-6 px-1 xs:gap-10 lg:grid-cols-3 lg:gap-5">
       <div className="flex justify-center lg:justify-start">
         <h1 className="flex flex-col justify-center text-5xl font-medium leading-none xs:text-6xl lg:text-5xl xl:text-6xl 2xl:text-[4.7rem]">
           <span>Oferta</span>
@@ -14,7 +14,7 @@ export default function Slider() {
         <Image
           className="h-auto w-full max-w-[580px]"
           src="/images/slider-image.png"
-          alt=""
+          alt="Narzędzia budowlane"
           width={592}
           height={584}
           priority
@@ -28,6 +28,6 @@ export default function Slider() {
           </span>
         </p>
       </div>
-    </section>
+    </header>
   );
 }

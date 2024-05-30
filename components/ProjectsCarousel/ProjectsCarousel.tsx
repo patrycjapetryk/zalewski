@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import SectionHeader from '../../ui/SectionHeader';
@@ -29,7 +28,7 @@ export const galleryItems = [
   },
 ];
 
-export default function ProjectsSection() {
+export default function ProjectsCarousel() {
   return (
     <Section>
       <SectionHeader>Realizacje</SectionHeader>

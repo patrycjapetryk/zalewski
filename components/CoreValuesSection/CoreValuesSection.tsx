@@ -1,10 +1,9 @@
-import SectionHeader from '../../ui/SectionHeader';
+import SectionHeader from '@/ui/SectionHeader';
+import Header from '@/ui/Header';
+import Paragraph from '@/ui/Paragraph';
+import Section from '@/ui/Section';
 
-import Header from '../../ui/Header';
-import Paragraph from '../../ui/Paragraph';
-import Section from '../../ui/Section';
-
-export default function ClientsSection() {
+export default function CoreValuesSection() {
   return (
     <Section>
       <SectionHeader>Klienci zaufali nam</SectionHeader>
