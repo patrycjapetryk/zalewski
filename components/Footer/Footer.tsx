@@ -6,7 +6,7 @@ export const socialMedia = [
   { name: 'Linkedin', url: '#' },
 ];
 
-export default function MainFooter() {
+export default function Footer() {
   return (
     <footer className="grid grid-cols-1 gap-x-10 gap-y-8 py-6 text-xxs sm:grid-cols-2 lg:grid-cols-3">
       <section>

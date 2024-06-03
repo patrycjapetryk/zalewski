@@ -28,7 +28,7 @@ export default function ProjectSection({ projectData }: Props) {
             />
           ))}
         </div>
-        <div className="w-full sm:w-[65%] md:w-[55%]">
+        <div className="w-full self-start sm:w-[65%] md:w-[55%] lg:sticky lg:top-[150px] xl:top-[200px]">
           <MainHeader className="mt-0">{title}</MainHeader>
           <Paragraph className="mb-10">{text}</Paragraph>
           <List className="mb-10" title="Zakres prac:" list={scope} />

@@ -7,7 +7,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className="grid grid-cols-1 gap-6 sm:gap-10 lg:grid-cols-2"
+      className="grid grid-cols-1 gap-6 text-sm sm:gap-10 lg:grid-cols-2"
       onSubmit={(event) => handleSubmit(event)}
     >
       <div>

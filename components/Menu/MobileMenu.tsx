@@ -8,7 +8,7 @@ import { menuData } from './menuData';
 import ButtonLink from '@/ui/ButtonLink';
 import { useMenuContext } from './MenuContext';
 
-export default function MobileMenu() {
+export default function MobileMenu({ ...spread }) {
   const { showMenu, openMenu, closeMenu } = useMenuContext();
   const currentPath = usePathname();
 
@@ -16,13 +16,13 @@ export default function MobileMenu() {
   const { label, url } = menuButton;
 
   return (
-    <>
+    <div {...spread}>
       <button className="mt-2" onClick={openMenu}>
         <Image src="/images/menu.svg" alt="" width="55" height="55" />
       </button>
 
       {showMenu && (
-        <nav className="animate-fade-in fixed bottom-3 left-3 right-3 top-3 z-20 flex items-center justify-center rounded-xl bg-red-2">
+        <nav className="fixed bottom-3 left-3 right-3 top-3 z-20 flex animate-fade-in items-center justify-center rounded-xl bg-red-2">
           <ul className="flex flex-col items-center gap-8">
             {menuItems.map(({ url, label }, i) => (
               <li key={i} className="uppercase">
@@ -48,6 +48,6 @@ export default function MobileMenu() {
           </button>
         </nav>
       )}
-    </>
+    </div>
   );
 }
