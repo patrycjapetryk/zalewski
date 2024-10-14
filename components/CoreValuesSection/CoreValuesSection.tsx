@@ -9,7 +9,7 @@ export default function CoreValuesSection() {
       <SectionHeader>Klienci zaufali nam</SectionHeader>
 
       <div className="grid w-full grid-cols-1 grid-rows-12 gap-5 sm:grid-cols-18">
-        <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-6 lg:col-span-6 xl:px-9 xl:py-20">
+        <article className="row-span-2 rounded-2xl bg-white px-8 py-12 sm:col-span-9 sm:row-span-6 lg:col-span-6 xl:px-9 xl:py-20">
           <Header>Doświadczenie</Header>
           <Paragraph>
             Działamy już ponad 30 lat. Setki zrealizowanych projektów oraz
@@ -18,7 +18,7 @@ export default function CoreValuesSection() {
           </Paragraph>
         </article>
 
-        <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-7 lg:col-span-5 xl:px-9 xl:py-20">
+        <article className="row-span-2 rounded-2xl bg-white px-8 py-12 sm:col-span-9 sm:row-span-7 lg:col-span-5 xl:px-9 xl:py-20">
           <Header>Gwarancja Bezpieczeństwa</Header>
           <Paragraph>
             Wieloletnie doświadczenie oraz znakomity zespół specjalistów pozwala
@@ -27,7 +27,7 @@ export default function CoreValuesSection() {
           </Paragraph>
         </article>
 
-        <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-7 lg:col-span-7 xl:px-9 xl:py-20">
+        <article className="row-span-2 rounded-2xl bg-white px-8 py-12 sm:col-span-9 sm:row-span-7 lg:col-span-7 xl:px-9 xl:py-20">
           <Header>Przezroczystość</Header>
           <Paragraph>
             To kim jesteśmy i jak realizujemy powierzone nam projekty, pozwala
@@ -36,7 +36,7 @@ export default function CoreValuesSection() {
           </Paragraph>
         </article>
 
-        <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-6 lg:col-span-6 xl:px-9 xl:py-20">
+        <article className="row-span-2 rounded-2xl bg-white px-8 py-12 sm:col-span-9 sm:row-span-6 lg:col-span-6 xl:px-9 xl:py-20">
           <Header>Kreatywność i ambicja</Header>
           <Paragraph>
             Stale rozwijamy się, aby dostarczać unikalne i nowoczesne
@@ -45,7 +45,7 @@ export default function CoreValuesSection() {
           </Paragraph>
         </article>
 
-        <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-5 lg:col-span-6 xl:px-9 xl:py-20">
+        <article className="row-span-2 rounded-2xl bg-white px-8 py-12 sm:col-span-9 sm:row-span-5 lg:col-span-6 xl:px-9 xl:py-20">
           <Header>Relacje i&nbsp;współpraca</Header>
           <Paragraph>
             Ciągłość działania Twojego biznesu zależy także od naszych
@@ -54,7 +54,7 @@ export default function CoreValuesSection() {
           </Paragraph>
         </article>
 
-        <article className="row-span-2 rounded-2xl bg-red px-8 py-12 sm:col-span-9 sm:row-span-5 lg:col-span-6 xl:px-9 xl:py-20">
+        <article className="row-span-2 rounded-2xl bg-white px-8 py-12 sm:col-span-9 sm:row-span-5 lg:col-span-6 xl:px-9 xl:py-20">
           <Header>Filozofia inwestycyjna</Header>
           <Paragraph>
             Naszą największą wartością są ludzie. Stale rozwijamy swoje

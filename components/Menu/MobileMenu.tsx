@@ -22,7 +22,7 @@ export default function MobileMenu({ ...spread }) {
       </button>
 
       {showMenu && (
-        <nav className="fixed bottom-3 left-3 right-3 top-3 z-20 flex animate-fade-in items-center justify-center rounded-xl bg-red-2">
+        <nav className="fixed bottom-0 left-0 right-0 top-0 z-20 flex animate-fade-in items-center justify-center bg-gray">
           <ul className="flex flex-col items-center gap-8">
             {menuItems.map(({ url, label }, i) => (
               <li key={i} className="uppercase">

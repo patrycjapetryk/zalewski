@@ -21,20 +21,14 @@ const config: Config = {
         xxs: '0.68rem',
       },
       colors: {
-        red: '#830016',
+        red: '#7a273f',
+        'shadow-red': '#E52862',
         'red-2': '#730012',
         'dark-red': '#5E0010',
-        black: '#240004',
-      },
-      backgroundImage: {
-        texture: "url('/images/background-1.jpg')",
-      },
-      backgroundSize: {
-        '100%': '100%',
-        '150%': '150%',
-      },
-      backgroundPosition: {
-        center: 'center -28%',
+        black: '#1C1D25',
+        white: '#ffffff',
+        gray: '#F0F0F0',
+        'dark-gray': '#221A12',
       },
       borderRadius: {
         xl: '1rem',

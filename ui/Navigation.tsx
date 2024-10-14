@@ -14,7 +14,7 @@ export default function Navigation({ menuItems }: Props) {
 
   return (
     <nav className="flex w-full items-center justify-center">
-      <ul className="flex gap-8 rounded-xl bg-white/10 px-12 py-3 backdrop-brightness-110 transition-all duration-300 hover:bg-white/15">
+      <ul className="flex gap-8 rounded-xl px-12 py-3 transition-all duration-300">
         {menuItems.map(({ url, label }, i) => (
           <li key={i} className="text-sm uppercase">
             <Link

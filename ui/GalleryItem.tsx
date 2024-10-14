@@ -9,9 +9,9 @@ type Props = {
 
 export default function GalleryItem({ image, alt, caption }: Props) {
   return (
-    <figure className="bg-red">
+    <figure className="rounded-2xl bg-white">
       <Image
-        className="w-full"
+        className="w-full rounded-t-2xl"
         src={image}
         alt={alt}
         width={507}
@@ -19,7 +19,7 @@ export default function GalleryItem({ image, alt, caption }: Props) {
         priority
       />
 
-      <figcaption className="-translate-y-1 bg-red px-4 py-6">
+      <figcaption className="-translate-y-1 rounded-b-2xl px-4 py-6">
         <h3 className="text-sm leading-none">{caption}</h3>
       </figcaption>
     </figure>
