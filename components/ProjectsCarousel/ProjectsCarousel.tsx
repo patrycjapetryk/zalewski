@@ -32,11 +32,15 @@ export default function ProjectsCarousel() {
   return (
     <Section>
       <SectionHeader>Realizacje</SectionHeader>
-      <div className="w-full overflow-x-auto ">
-        <div className="grid w-[200%] grid-cols-3 gap-6 md:w-full">
+      <div className="w-[calc(100%+48px)] -translate-x-6 overflow-x-auto px-6 pb-16 md:w-full md:translate-x-0">
+        <div className="grid w-[200%] grid-cols-3 gap-3 md:w-full md:gap-6">
           {galleryItems.map(({ id, image, link, alt, caption }) => {
             return (
-              <Link href={link} key={id} className="w-full">
+              <Link
+                href={link}
+                key={id}
+                className="shadow-red-md w-full rounded-2xl bg-white"
+              >
                 <GalleryItem image={image} alt={alt} caption={caption} />
               </Link>
             );

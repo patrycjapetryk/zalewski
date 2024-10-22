@@ -7,24 +7,24 @@ export default function ContactForm() {
 
   return (
     <form
-      className="grid grid-cols-1 gap-6 text-sm sm:gap-10 lg:grid-cols-2"
+      className="flex flex-col gap-6 text-sm sm:gap-8"
       onSubmit={(event) => handleSubmit(event)}
     >
-      <div>
+      <div className="md:max-w-[60%]">
         <label htmlFor="name" className="hidden">
-          NAME*
+          IMIĘ*
         </label>
 
         <input
           type="text"
-          placeholder="NAME*"
+          placeholder="IMIĘ*"
           id="name"
           autoComplete="on"
-          className="w-full border-b border-white bg-transparent py-4 text-white placeholder-white outline-none focus:border-b-2"
+          className="w-full rounded-2xl border-0 bg-white px-4 py-3 text-black placeholder-black outline-none"
         />
       </div>
 
-      <div>
+      <div className="md:max-w-[60%]">
         <label htmlFor="email" className="hidden">
           EMAIL*
         </label>
@@ -33,38 +33,25 @@ export default function ContactForm() {
           id="email"
           autoComplete="on"
           placeholder="EMAIL*"
-          className="w-full border-b border-white bg-transparent py-4 text-white placeholder-white outline-none focus:border-b-2"
-        />
-      </div>
-
-      <div className="lg:col-span-2">
-        <label htmlFor="budget" className="hidden">
-          ESTIMATED BUDGET
-        </label>
-        <input
-          type="text"
-          id="budget"
-          autoComplete="on"
-          placeholder="ESTIMATED BUDGET"
-          className="w-full border-b border-white bg-transparent py-4 text-white placeholder-white outline-none focus:border-b-2"
+          className="w-full rounded-2xl border-0 bg-white px-4 py-3 text-black placeholder-black outline-none"
         />
       </div>
 
       <div>
         <label htmlFor="message" className="hidden">
-          MESSAGE*
+          WIADOMOŚĆ*
         </label>
         <textarea
-          rows={4}
+          rows={5}
           id="message"
           autoComplete="off"
-          placeholder="MESSAGE*"
-          className="w-full border-b border-white bg-transparent py-4 text-white placeholder-white outline-none focus:border-b-2"
+          placeholder="WIADOMOŚĆ*"
+          className="w-full rounded-2xl border-0 bg-white px-4 py-3 text-black placeholder-black outline-none"
         ></textarea>
       </div>
 
-      <div className="flex items-end">
-        <button className="leading-2 rounded-xl bg-white px-12 py-[0.6rem] text-sm uppercase text-black transition-opacity hover:opacity-75">
+      <div className="flex w-full justify-end">
+        <button className="leading-2 rounded-xl bg-white px-12 py-[0.6rem] text-sm uppercase text-black transition-opacity hover:opacity-75 lg:px-16 lg:py-[0.7rem]">
           Wyślij
         </button>
       </div>

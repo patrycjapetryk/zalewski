@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         body: ['var(--font-manrope)'],
+        sans: ['var(--font-cabinet)'],
       },
       screens: {
         xs: '400px',
@@ -22,9 +23,6 @@ const config: Config = {
       },
       colors: {
         red: '#7a273f',
-        'shadow-red': '#E52862',
-        'red-2': '#730012',
-        'dark-red': '#5E0010',
         black: '#1C1D25',
         white: '#ffffff',
         gray: '#F0F0F0',
@@ -32,6 +30,11 @@ const config: Config = {
       },
       borderRadius: {
         xl: '1rem',
+      },
+      boxShadow: {
+        red: '0px 8px 30px 0px rgba(229, 40, 98, 0.1)',
+        'red-md': '0px 8px 25px 0px rgba(229, 40, 98, 0.25)',
+        'red-sm': '0px 5px 29px 0px rgba(229, 40, 98, 0.25)',
       },
       gridTemplateColumns: {
         '18': 'repeat(18, minmax(0, 1fr))',

@@ -8,72 +8,82 @@ export default function PartnersLogosSection() {
     <Section>
       <SectionHeader>Partnerzy</SectionHeader>
       <div className="hide-scroll w-full overflow-x-scroll">
-        <div className="my-6 flex w-[200%] justify-between gap-6 lg:w-full">
-          <a href="#" target="_blank">
+        <div className="my-6 flex w-[200%] items-center justify-between gap-6 lg:w-full">
+          <figure>
             <Image
-              className="h-[90px] w-auto"
-              src="/images/logo-1.svg"
-              alt=""
-              width={148}
-              height={181}
+              src="/images/partners/varso-tower-logo.png"
+              alt="Logo Varso Tower"
+              width={115}
+              height={115}
               priority
             />
-          </a>
+          </figure>
 
-          <a href="#" target="_blank">
+          <figure>
             <Image
-              className="h-[90px] w-auto"
-              src="/images/logo-2.svg"
-              alt=""
-              width={148}
-              height={181}
+              className="h-auto w-[160px]"
+              src="/images/partners/skf-logo.png"
+              alt="Logo SKF"
+              width={170}
+              height={90}
               priority
             />
-          </a>
+          </figure>
 
-          <a href="#" target="_blank">
+          <figure>
             <Image
-              className="h-[90px] w-auto"
-              src="/images/logo-3.svg"
-              alt=""
-              width={148}
-              height={181}
+              className="h-auto w-[190px]"
+              src="/images/partners/ferrero-logo.png"
+              alt="Logo Ferrero"
+              width={234}
+              height={31}
               priority
             />
-          </a>
+          </figure>
 
-          <a href="#" target="_blank">
+          <figure>
             <Image
-              className="h-[90px] w-auto"
-              src="/images/logo-4.svg"
-              alt=""
-              width={148}
-              height={181}
+              className="h-auto w-[190px]"
+              src="/images/partners/putka-logo.png"
+              alt="Logo Putka"
+              width={207}
+              height={88}
               priority
             />
-          </a>
+          </figure>
 
-          <a href="#" target="_blank">
+          <figure>
             <Image
-              className="h-[90px] w-auto"
-              src="/images/logo-5.svg"
-              alt=""
-              width={148}
-              height={181}
+              className="h-auto w-[170px]"
+              src="/images/partners/tuszynscy-logo.png"
+              alt="Logo Tuszyńscy"
+              width={206}
+              height={107}
               priority
             />
-          </a>
+          </figure>
 
-          <a href="#" target="_blank">
+          <figure>
             <Image
-              className="h-[90px] w-auto"
-              src="/images/logo-6.svg"
-              alt=""
-              width={148}
-              height={181}
+              className="h-auto w-[65px]"
+              src="/images/partners/gmina-warka-logo.png"
+              alt="Logo Gminy Warka"
+              width={71}
+              height={84}
               priority
             />
-          </a>
+          </figure>
+
+          <figure>
+            <Image
+              className="h-auto w-[130px]"
+              src="/images/partners/oskroba-logo.png"
+              alt="Logo Oskroba"
+              width={151}
+              height={131}
+              priority
+            />
+          </figure>
         </div>
       </div>
     </Section>

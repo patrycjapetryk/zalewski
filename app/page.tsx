@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <Main>
       <HomepageHeader />
-      <OfferSection />
       <CoreValuesSection />
+      <OfferSection />
       <ProjectsCarousel />
       <PartnersLogosSection />
       <ContactSection />

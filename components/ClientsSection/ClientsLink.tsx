@@ -17,7 +17,7 @@ export default function ClientsLink({
   return (
     <Link
       className={cn(
-        `relative rounded-2xl bg-white px-5 pb-10 pt-12 after:absolute after:right-2 after:top-1 after:scale-75 after:content-arrow hover:after:right-1 hover:after:top-0 xl:px-10 xl:py-28`,
+        `shadow-red-md relative rounded-2xl bg-white px-5 pb-10 pt-12 after:absolute after:right-2 after:top-1 after:scale-75 after:content-arrow hover:after:right-1 hover:after:top-0 xl:px-10 xl:py-20`,
         className,
       )}
       href={href}

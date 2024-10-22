@@ -4,15 +4,15 @@ import Header from '@/ui/Header';
 import Paragraph from '@/ui/Paragraph';
 import Section from '@/ui/Section';
 import ClientsLink from '@/components/ClientsSection/ClientsLink';
+import SectionHeader from '@/ui/SectionHeader';
 
 export default function ClientsSection() {
   return (
     <Section>
-      <div className="grid w-full grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3">
-        <ClientsLink
-          href="/oferta/klienci-indywidualni"
-          className="pl-[40%] xs:col-span-2 xl:pl-[50%]"
-        >
+      <SectionHeader>Klienci zaufali nam</SectionHeader>
+
+      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-7 sm:grid-cols-2">
+        <ClientsLink href="/oferta/klienci-indywidualni">
           <Header>
             Klienci <br />
             Indywidualni
@@ -21,15 +21,6 @@ export default function ClientsSection() {
             Budujesz dom? Zespół naszych specjalistów pomoże spełnić Twoje
             marzenia
           </Paragraph>
-          <div className="absolute -left-10 bottom-0 h-[123%] w-[62%] xs:-left-14 xl:left-0 xl:w-[51%]">
-            <Image
-              className="h-full w-full object-contain object-left-bottom"
-              src="/images/photo-2.png"
-              alt="Klienci indywidualni"
-              sizes="(max-width: 768px) 50vw, 33vw"
-              fill
-            />
-          </div>
         </ClientsLink>
 
         <ClientsLink href="/oferta/architekci-i-biura-projektowe">
@@ -45,29 +36,36 @@ export default function ClientsSection() {
             Firmy <br />
             branżowe
           </Header>
-          <Paragraph>
-            Prowadzisz inwestycje o wysokich kosztach? Oferujemy swoją pomoc.
-            Sprawdź nasze referencje.
-          </Paragraph>
-        </ClientsLink>
-
-        <ClientsLink
-          href="/oferta/klienci-inwestycyjni"
-          className="pr-[46%] xs:col-span-2 xl:pr-[55%]"
-        >
-          <Header>
-            Klienci <br />
-            Inwestycyjni
-          </Header>
-          <Paragraph>
+          <Paragraph className="md:max-w-[48%]">
             Oferta obejmuje wszystkie etapy procesu inwestycyjnego od analiz po
             doradztwo.
           </Paragraph>
 
-          <div className="absolute -bottom-7 -right-2 h-full w-[48%] xl:right-7">
+          <div className="absolute bottom-0 right-4 hidden h-[100%] w-[48%] md:block">
             <Image
               className="h-full w-full object-contain"
-              src="/images/photo-3.png"
+              src="/images/photo-1.png"
+              alt="Klienci inwestycyjni"
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+            />
+          </div>
+        </ClientsLink>
+
+        <ClientsLink href="/oferta/klienci-inwestycyjni">
+          <Header>
+            Klienci <br />
+            Inwestycyjni
+          </Header>
+          <Paragraph className="md:max-w-[48%]">
+            Oferta obejmuje wszystkie etapy procesu inwestycyjnego od analiz po
+            doradztwo.
+          </Paragraph>
+
+          <div className="absolute bottom-0 right-4 hidden h-[100%] w-[48%] md:block">
+            <Image
+              className="h-full w-full object-contain"
+              src="/images/photo-2.png"
               alt="Klienci inwestycyjni"
               fill
               sizes="(max-width: 768px) 50vw, 33vw"

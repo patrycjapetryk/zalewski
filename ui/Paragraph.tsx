@@ -7,7 +7,7 @@ type Props = {
 
 export default function Paragraph({ children, className, ...spread }: Props) {
   return (
-    <p className={cn('text-sm', className)} {...spread}>
+    <p className={cn('font-sans', className)} {...spread}>
       {children}
     </p>
   );

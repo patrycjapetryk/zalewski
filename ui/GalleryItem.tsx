@@ -9,7 +9,7 @@ type Props = {
 
 export default function GalleryItem({ image, alt, caption }: Props) {
   return (
-    <figure className="rounded-2xl bg-white">
+    <figure>
       <Image
         className="w-full rounded-t-2xl"
         src={image}
