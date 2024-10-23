@@ -7,12 +7,12 @@ type Props = {
 };
 
 export default function ClientsImage({ photo }: Props) {
-  const { url, alt, bottom } = photo;
+  const { url, alt } = photo;
 
   return (
-    <div className="absolute left-5 top-24 h-60 w-[85%] xl:-left-20 xl:top-44 xl:h-[calc(100%-11rem)] xl:w-[40%]">
+    <div className="absolute left-5 top-8 h-[340px] w-full xl:-left-5 xl:top-20 xl:h-[650px] xl:w-[44%]">
       <Image
-        className={`object-contain ${bottom ? 'xl:object-left-bottom' : 'xl:object-left-top'}`}
+        className="object-contain xl:object-left-top"
         src={url}
         alt={alt}
         fill

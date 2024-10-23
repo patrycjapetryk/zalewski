@@ -4,9 +4,8 @@ export const clientsData = [
     uid: 'klienci-indywidualni',
     title: 'Klienci indywidualni',
     photo: {
-      url: '/images/clients-1.png',
+      url: '/images/photo-new-clients-1.png',
       alt: 'Klienci indywidualni',
-      bottom: true,
     },
     texts: [
       'NASZA OFERTA OBEJMUJE WSZYSTKIE ETAPY PROCESU INWESTYCYJNEGO POCZĄWSZY OD ANALIZ I KONCEPCJI PRZEDINWESTYCYJNYCH, POPRZEZ PROJEKTY BUDOWLANE, PRZETARGOWE, WYKONAWCZE, KOSZTORYSY, SPECYFIKACJE, NADZORY NAD REALIZACJĄ ROBÓT, AŻ DO DORADZTWA ENERGETYCZNEGO W TRAKCIE EKSPLOATACJI OBIEKTÓW.',
@@ -37,9 +36,8 @@ export const clientsData = [
     uid: 'architekci-i-biura-projektowe',
     title: 'Architekci i biura projektowe',
     photo: {
-      url: '/images/clients-2.png',
+      url: '/images/photo-new-architects-1.png',
       alt: 'Architekci i biura projektowe',
-      bottom: false,
     },
     texts: [
       'NASZA OFERTA OBEJMUJE WSZYSTKIE ETAPY PROCESU INWESTYCYJNEGO POCZĄWSZY OD ANALIZ I KONCEPCJI PRZEDINWESTYCYJNYCH, POPRZEZ PROJEKTY BUDOWLANE, PRZETARGOWE, WYKONAWCZE, KOSZTORYSY, SPECYFIKACJE, NADZORY NAD REALIZACJĄ ROBÓT, AŻ DO DORADZTWA ENERGETYCZNEGO W TRAKCIE EKSPLOATACJI OBIEKTÓW.',
@@ -70,9 +68,8 @@ export const clientsData = [
     uid: 'firmy-branzowe',
     title: 'Firmy branżowe',
     photo: {
-      url: '/images/clients-3.png',
+      url: '/images/photo-new-companies-1.png',
       alt: 'Firmy branżowe',
-      bottom: false,
     },
     texts: [
       'NASZA OFERTA OBEJMUJE WSZYSTKIE ETAPY PROCESU INWESTYCYJNEGO POCZĄWSZY OD ANALIZ I KONCEPCJI PRZEDINWESTYCYJNYCH, POPRZEZ PROJEKTY BUDOWLANE, PRZETARGOWE, WYKONAWCZE, KOSZTORYSY, SPECYFIKACJE, NADZORY NAD REALIZACJĄ ROBÓT, AŻ DO DORADZTWA ENERGETYCZNEGO W TRAKCIE EKSPLOATACJI OBIEKTÓW.',
@@ -103,9 +100,8 @@ export const clientsData = [
     uid: 'klienci-inwestycyjni',
     title: 'Klienci inwestycyjni',
     photo: {
-      url: '/images/clients-4.png',
+      url: '/images/photo-new-investors-1.png',
       alt: 'Klienci inwestycyjni',
-      bottom: false,
     },
     texts: [
       'NASZA OFERTA OBEJMUJE WSZYSTKIE ETAPY PROCESU INWESTYCYJNEGO POCZĄWSZY OD ANALIZ I KONCEPCJI PRZEDINWESTYCYJNYCH, POPRZEZ PROJEKTY BUDOWLANE, PRZETARGOWE, WYKONAWCZE, KOSZTORYSY, SPECYFIKACJE, NADZORY NAD REALIZACJĄ ROBÓT, AŻ DO DORADZTWA ENERGETYCZNEGO W TRAKCIE EKSPLOATACJI OBIEKTÓW.',

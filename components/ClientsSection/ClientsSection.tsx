@@ -16,9 +16,9 @@ export default function ClientsSection({ clientsPageData }: Props) {
 
   return (
     <Section className="relative">
-      <div className="grid grid-cols-1 rounded-2xl bg-red px-6 pb-12 pt-10 xl:grid-cols-3 xl:px-16 xl:py-4 xl:pb-16 xl:pt-14">
+      <div className="grid grid-cols-1 px-2 pb-12 xl:grid-cols-3 xl:px-16 xl:py-4 xl:pb-16 xl:pt-14">
         <div>
-          <MainHeader className="mb-72" uppercase>
+          <MainHeader className="mb-[380px]" uppercase>
             {title}
           </MainHeader>
           <ClientsImage photo={photo} />

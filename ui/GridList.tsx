@@ -18,7 +18,7 @@ export default function GridList({
         {list.map((item, index) => {
           return (
             <li
-              className={`rounded-lg border px-4 py-5 ${largerRectanglesIndexes.includes(index) && 'xl:col-span-2'}`}
+              className={`rounded-lg bg-white px-4 py-5 ${largerRectanglesIndexes.includes(index) && 'xl:col-span-2'}`}
               key={index}
             >
               {item}
