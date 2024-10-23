@@ -8,7 +8,7 @@ export default function AboutUs() {
   return (
     <Main className="xl:mt-6">
       <ArticleSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <PartnersLogosSection />
       <ContactSection />
     </Main>

@@ -5,7 +5,7 @@ import Section from '@/ui/Section';
 export default function ArticleSection() {
   return (
     <Section>
-      <article className="rounded-2xl bg-red px-6 py-4 xl:px-16 xl:py-8">
+      <article className="px-6 py-4 xl:px-16 xl:py-8">
         <MainHeader>O nas</MainHeader>
 
         <Paragraph className="mb-10">
